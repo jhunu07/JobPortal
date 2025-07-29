@@ -1,12 +1,30 @@
-# React + Vite
+# 🚀 Job Portal (MERN + Clerk)  
+**Status:** 🧪 In Development
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack job portal web application using the **MERN stack** (MongoDB, Express.js, React, Node.js), with modern authentication powered by **Clerk**. This project is currently under development and features are being added progressively.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React, React Router, Axios, Clerk
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (via Mongoose)
+- **Authentication:** Clerk (fully managed)
+- **Other Tools:** dotenv, concurrently, nodemon
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features (Work in Progress)
+
+- ✅ User Authentication via Clerk (Sign Up / Sign In / Session)
+- 🔒 Protected Routes using Clerk
+- 🚀 Job Listings (coming soon)
+- 📝 Apply to Jobs (planned)
+- 📁 Resume Upload (planned)
+- 🧑‍💼 Role-Based Dashboards (Admin / Recruiter / Job Seeker)
+- 🔍 Job Search & Filtering (planned)
+- 📊 Admin Panel (planned)
+
+---
+
