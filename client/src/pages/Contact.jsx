@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Footer from "../components/Footer"; // Assuming you have a Footer component
+import Navbar from "../components/Navbar"; // Fixed typo here
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -14,7 +16,10 @@ const Contact = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+      
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 bg-white shadow-lg rounded-lg p-10">
 
         {/* Contact Form */}
@@ -102,12 +107,11 @@ const Contact = () => {
               🕘 Hours: Mon–Fri, 9AM to 6PM (EST)
             </p>
           </div>
-
-         
-          
         </div>
-      </div>
+      </div> 
     </div>
+    <Footer />
+    </>
   );
 };
 

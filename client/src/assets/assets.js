@@ -84,20 +84,20 @@ export const JobCategories = [
 
 export const JobLocations = [
     "Bangalore",
-    "Washington",
+    "Delhi",
     "Hyderabad",
     "Mumbai",
-    "California",
+    "Pune",
     "Chennai",
-    "New York"
+    "Noida"
 ]
 
 // Sample data for Manage Jobs Page
 export const manageJobsData = [
     { _id: 1, title: "Full Stack Developer", date: 1729102298497, location: "Bangalore", applicants: 20 },
-    { _id: 2, title: "Data Scientist", date: 1729102298497, location: "San Francisco", applicants: 15 },
-    { _id: 3, title: "Marketing Manager", date: 1729102298497, location: "London", applicants: 2 },
-    { _id: 4, title: "UI/UX Designer", date: 1729102298497, location: "Dubai", applicants: 25 }
+    { _id: 2, title: "Data Scientist", date: 1729102298497, location: "Delhi", applicants: 15 },
+    { _id: 3, title: "Marketing Manager", date: 1729102298497, location: "Pune", applicants: 2 },
+    { _id: 4, title: "UI/UX Designer", date: 1729102298497, location: "Noida", applicants: 25 }
 ];
 
 // Sample data for Profile Page
@@ -145,13 +145,13 @@ export const jobsApplied = [
 ];
 
 export const viewApplicationsPageData = [
-    { _id: 1, name: "Richard Sanford", jobTitle: "Full Stack Developer", location: "Bangalore", imgSrc: profile_img },
+    { _id: 1, name: "Ramesh Singh", jobTitle: "Full Stack Developer", location: "Bangalore", imgSrc: profile_img },
     { _id: 2, name: "Enrique Murphy", jobTitle: "Data Scientist", location: "San Francisco", imgSrc: profile_img },
     { _id: 3, name: "Alison Powell", jobTitle: "Marketing Manager", location: "London", imgSrc: profile_img },
     { _id: 4, name: "Richard Sanford", jobTitle: "UI/UX Designer", location: "Dubai", imgSrc: profile_img },
-    { _id: 5, name: "Enrique Murphy", jobTitle: "Full Stack Developer", location: "Hyderabad", imgSrc: profile_img },
-    { _id: 6, name: "Alison Powell", jobTitle: "Data Scientist", location: "New Delhi", imgSrc: profile_img },
-    { _id: 7, name: "Richard Sanford", jobTitle: "Marketing Manager", location: "Chennai", imgSrc: profile_img },
+    { _id: 5, name: "Sanjeev Reddy  ", jobTitle: "Full Stack Developer", location: "Hyderabad", imgSrc: profile_img },
+    { _id: 6, name: "Samar Roy", jobTitle: "Data Scientist", location: "New Delhi", imgSrc: profile_img },
+    { _id: 7, name: "Suresh Wnga", jobTitle: "Marketing Manager", location: "Chennai", imgSrc: profile_img },
 ];
 
 export const jobsData = [

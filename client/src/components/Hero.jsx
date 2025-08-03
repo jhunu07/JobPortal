@@ -46,13 +46,13 @@ const Hero = () => {
           </div>
 
           {/* location */}
-          <div className="flex w-full md:w-1/2 items-center border-t md:border-t-0 md:border-l border-gray-200 px-4 py-3">
+          <div className=" mx-2 flex w-full md:w-1/2 items-center border-t md:border-t-0 md:border-l border-gray-200 px-4 py-3">
             <img src={assets.location_icon} alt="" className="h-4 sm:h-5" />
             <input
               ref={locationRef}
               type="text"
               placeholder="Location"
-              className="ml-2 w-full text-sm placeholder-gray-400 text-gray-700 outline-none"
+              className="  ml-2 w-full text-sm placeholder-gray-400 text-gray-700 outline-none"
             />
           </div>
 

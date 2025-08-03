@@ -1,9 +1,14 @@
 // pages/Dashboard.jsx
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
+import { NavLink } from "react-router-dom";
+
 
 const Dashboard = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen">
 
@@ -12,7 +17,7 @@ const Dashboard = () => {
         <div className="px-5 flex justify-between items-center">
 
           {/* Logo */}
-          <img
+          <img onClick={() => navigate('/')}
             className="max-sm:w-32 cursor-pointer"
             src={assets.logo}
             alt="logo"
@@ -22,7 +27,7 @@ const Dashboard = () => {
           <div className="flex items-center gap-3">
 
             {/* Welcome message */}
-            <p className="max-sm:hidden">Welcome, GreatStack</p>
+            <p className="max-sm:hidden">Welcome,</p>
 
             {/* Profile with dropdown */}
             <div className="relative group">
@@ -46,9 +51,34 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      
 
       {/* Main dashboard content */}
-      <Outlet />
+      
+      <div className="flex items-start">
+        <div className="inline-block min-h-screen border-r-2">
+          <ul className="flex flex-col  items-start gap-2 pt-5 text-gray-800">
+
+            <NavLink  className={({isActive}) => `flex items-center p-2 sm:px-6 gap-2 w-full hover:bg-gray-100 ${isActive && "text-blue-500 border-r-4 border-blue-400"}`} to={"/dashboard/add-job"}>
+            <img className="min-w-4" src={assets.add_icon} alt="" />
+
+            <p className="max-sm:hidden">Add Job</p>
+            </NavLink>
+
+            <NavLink className={({isActive}) => `flex items-center p-2 sm:px-6 gap-2 w-full hover:bg-gray-100 ${isActive && "text-blue-500 border-r-4 border-blue-400"}`} to={"/dashboard/manage-jobs"}>
+            <img className="min-w-4" src={assets.home_icon} alt="" />
+            <p className="max-sm:hidden">Manage Jobs</p>
+            </NavLink>
+            <NavLink className={({isActive}) => `flex items-center p-2 sm:px-6 gap-2 w-full hover:bg-gray-100 ${isActive && "text-blue-500 border-r-4 border-blue-400"}`} to={"/dashboard/view-applications"}>
+            <img className="min-w-4" src={assets.person_tick_icon} alt="" />
+            <p className="max-sm:hidden">View Applications</p>
+            </NavLink>
+          </ul>
+        </div>
+        <div>
+        <Outlet />
+        </div>
+      </div>
     </div>
   );
 };
