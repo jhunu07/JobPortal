@@ -85,7 +85,7 @@ const Contact = () => {
           <div>
             <h3 className="text-2xl font-semibold text-gray-800 mb-2">Need Help?</h3>
             <p className="text-gray-600">
-              💬 For technical issues, application help, or support queries, our dedicated team is here for you. 
+               For technical issues, application help, or support queries, our dedicated team is here for you. 
               Please include your Job ID or Account Email for faster assistance.
             </p>
           </div>
@@ -102,9 +102,9 @@ const Contact = () => {
           <div>
             <h3 className="text-2xl font-semibold text-gray-800 mb-2">Support Contacts</h3>
             <p className="text-gray-600">
-              📧 Email: support@jobportal.com <br />
-              📞 Phone: +1 234 567 890 <br />
-              🕘 Hours: Mon–Fri, 9AM to 6PM (EST)
+            Email: support@jobportal.com <br />
+             Phone: +1 234 567 890 <br />
+             Hours: Mon–Fri, 9AM to 6PM (EST)
             </p>
           </div>
         </div>
